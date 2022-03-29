@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto";
+}
+header {
+  width: 100%;
+  height: 5rem;
+  background-color: #f0a028;
+  position: fixed;
+}
+
+.container--header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  padding-right: 1.2rem;
+  font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menu:hover {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 2px;
+}
+
+.login-btn {
+  background: rgb(0, 0, 0);
+  color: white;
+  border: 4px solid black;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 200px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.login-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.hero--page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(15, 15, 15, 0.74),
+      #f0a02893
+    ),
+    url("https://www.urbanresidences.com/wp-content/uploads/2020/01/UR-R-dam-penthouse-2-2.jpg");
+}
+.heading-primary {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.heading-primary h1 {
+  font-weight: 400;
+  line-height: 4rem;
+  margin: 1.5rem;
+}
+
+.bekijk--aanbod {
+  background-color: #f0a028;
+  font-size: 1.5rem;
+  padding: 8px 40px;
+  border-radius: 80px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 3px solid black;
+  font-weight: 700;
+}
+
+.bekijk--aanbod:hover {
+  background-color: black;
+  color: white;
+}
+
+.logo-img {
+  height: 5rem;
+  padding: 0.5rem;
+}
