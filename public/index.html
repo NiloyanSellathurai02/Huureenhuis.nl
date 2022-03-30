@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huureenhuis</title>
+    <script
+      src="https://kit.fontawesome.com/7e4ae21415.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   </head>
   <body>
@@ -36,7 +37,7 @@
         </div>
         <div class="login">
           <button id="lgn-btn" class="login-btn">
-            Log in <i class="fa fa-user"></i>
+            <i class="fa-solid fa-user"></i> Log in
           </button>
         </div>
       </div>
@@ -47,10 +48,145 @@
           Beste woningen voor <br />
           een scherpe prijs
         </h1>
-        <button id="bekijk-aanbod" class="bekijk--aanbod">
-          Bekijk aanbod &#8594;
-        </button>
+        <a href = "#search-house" id="bekijk-aanbod" class="bekijk--aanbod">
+          <i class="fa-solid fa-house-circle-check"></i> Bekijk aanbod
+        </a>
       </div>
     </section>
+    <section class="info">
+      <div class="container-info">
+        <div class="image-box">
+          <img src="/images/huis.jpg" alt="huis" class="info-huisimg" />
+        </div>
+        <div class="textare">
+          <h2 class="heading-info">
+            Wij zijn de beste en meest vertrouwde<br />
+            makelaar van Nederland
+          </h2>
+          <p class="text-info">
+            Op de vastgoedwebsite huureenhuis.nl ontdekt u de mooiste
+            residentiële eigendommen te koop en te huur in Nederland. In
+            samenwerking met de beste vastgoedkantoren wordt nauwlettend
+            toegezien op het leveren van kwaliteit in het aanbod. Zo bieden wij
+            u een mooi overzicht van uitsluitend hoogwaardig woningen. Bent u op
+            zoek naar exclusief vastgoed? Bekijk dan snel ons uitgebreid aanbod,
+            zodat u binnenkort ook de nieuwe eigenaar van uw droomwoning kan
+            worden.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="search-house" id="search-house">
+      <h1 class="heading-search">
+        N° 1 in exclusieve woningen
+      </h1>
+      <div class="search-house-container">
+        
+        <div class="search-box">
+          <div class="search-location">
+              <label for="locatie">Locatie</label>
+              <select name="locatie" id="location">
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="Den Haag">Den Haag</option>
+                <option value="Utrecht">Utrecht</option>
+                <option value="Rotterdam">Rotterdam</option>
+              </select>
+          </div>
+          <div class="search-type">
+            <label for="type-woning">Type woning</label>
+              <select name="type-woning" id="type-woning">
+                <option value="Studio">Studio</option>
+                <option value="Familie appartement">Familie appartement</option>
+                <option value="Utrecht">Villa</option>
+                <option value="Rotterdam">Penthouse</option>
+              </select>
+          </div>
+          <div class="search-price">
+            <label for="prijs">Prijs</label>
+            <select name="prijs" id="prijs">
+              <option value="Studio">0-500</option>
+              <option value="Familie appartement">500-1000</option>
+              <option value="Utrecht">1000-2000</option>
+              <option value="Rotterdam">2000+</option>
+            </select>
+          </div>
+          <div class="submit">
+            <button id="search-submit-ctn" class="search-ctn">
+              <i class="fa-regular fa-magnifying-glass"></i> Zoek nu 
+            </button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter-box">
+        <div class="newsletter-container">
+          <div class="newsletter-image">
+            <img src="/images/news-letter.png" alt="newsletter-img" class = "newsletter-img">
+          </div>
+          <div class="input-field">
+            <h2 class="heading-newsletter">
+              Ontvang maandelijkse updates
+            </h2>
+            <h4 class="heading-secondary-newsletter">
+              SCHRIJF JE IN OP DE HUUREENHUIS NIEUWSBRIEF
+            </h4>
+            <div class="input-email">
+              <input type="email" id="email" name="email" placeholder="piet@gmail.com">
+              <button id="newsletter-ctn" class="newsletter-ctn">Aboneer nu</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-footer">
+        <div class="footer-1">
+          <h2 class="footer-heading">
+            Lees ook!
+          </h2>
+          <ul class="footer-ul">
+            <li class="footer-menu">
+              <a href="https://www.funda.nl/meer-weten/verkoper/" class="menu-1">Verkoop je huis</a>
+            </li>
+            <li class="footer-menu">
+              <a href="https://www.funda.nl/meer-weten/starter/" class="menu-1">Koop je eerste huis</a>
+            </li>
+            <li class="footer-menu">
+              <a href="https://www.eigenhuis.nl/actueel/nieuwsoverzicht" class="menu-1">Woning Nieuws</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-2">
+          <h2 class="footer-heading">
+            Informatie
+          </h2>
+          <ul class="footer-ul">
+            <li class="footer-menu">
+              <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/huurtoeslag/huurtoeslag" class="menu-1">Huurtoeslag</a>
+            </li> 
+            <li class="footer-menu">
+              <a href="https://vastgoedjournaal.nl/news/54802/twee-bedrijven-huren-1-824-m-sup2-kantoorruimte-in-de-millennium-tower-in-rotterdam" class="menu-1">Vastgoed Journaal</a>
+            </li>
+            <li class="footer-menu">
+              <a href="https://www.funda.nl/meer-weten/starter/" class="menu-1">Juiste huurovereenkomst</a>
+            </li>
+          </ul>
+      </div>
+        <div class="footer-3">
+          <h2 class="footer-heading">
+            Hoofdkantoor
+          </h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.860924432747!2d4.866801215592022!3d52.33666907978001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60ba7571d256d%3A0xbedd9d8ec005893b!2sThe%20Office%20Operators%20Amsterdam%20Zuidas%20NoMA%20House!5e0!3m2!1snl!2snl!4v1648639582650!5m2!1snl!2snl" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      
+    </footer>
+    <div class="footer-copyright">
+      <p>&copy; Huureenhuis.nl 2022 ; Design & Development by :<a href="https://npinnovation.nl/"> NP Innovation</a> </p>
+    </div>
   </body>
 </html>
