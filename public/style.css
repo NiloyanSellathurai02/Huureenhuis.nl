@@ -151,6 +151,7 @@ a {
   background-position: center;
   background-size: cover;
   padding: 5rem;
+  height: 100vh;
 }
 .heading-search {
   font-size: 4rem;
@@ -317,4 +318,63 @@ footer {
   background-color: white;
   text-align: center;
   font-weight: 800;
+}
+
+.house-col {
+  color: #000000;
+  height: 100%;
+  padding: 3rem;
+}
+
+.container-houses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.row-1 {
+  height: 28.5rem;
+  width: 30rem;
+  background-color: #f0a028;
+  border: 4px solid #000000;
+  /* border-radius: 3rem; */
+}
+
+.header-aanbod {
+  position: relative;
+}
+
+.house {
+  height: 19rem;
+  width: 29.49rem;
+}
+
+.row-description {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.7rem;
+  font-size: 1.3rem;
+  background-color: #f0a028;
+}
+
+.straatnaam {
+  text-align: center;
+  font-size: 1.17 rem;
+  font-weight: 800;
+  padding: 1rem;
+  background-color: #f0a028;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.rent--house {
+  font-size: 1.2rem;
+  background-color: #000000;
+  color: white;
+  padding: 0.1rem 1.5rem;
+  border-radius: 20px;
+  border: 2px solid white;
 }
