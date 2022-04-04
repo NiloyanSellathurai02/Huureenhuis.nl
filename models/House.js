@@ -12,6 +12,7 @@ const schema = new mongoose.Schema({
   rooms: "number",
   price: "number",
   type: "string",
+  img: "string",
 });
 
 const House = mongoose.model("House", schema);
