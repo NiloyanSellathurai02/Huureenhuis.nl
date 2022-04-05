@@ -31,6 +31,22 @@ app.get("/houses", async (req, res) => {
   }
 });
 
+app.patch("/rented/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    console.log(id);
+    const correctBtnId = await House.findOneAndUpdate(
+      {
+        id: id,
+      },
+      { status: "BLOCKED" }
+    );
+    res.send(correctBtnId);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
 app.use(express.static("public"));
 
 app.listen(port, () => {

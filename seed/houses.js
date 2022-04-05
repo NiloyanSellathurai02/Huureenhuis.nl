@@ -31,6 +31,7 @@ const houses = [
     price: 1750,
     type: "penthouse",
     img: "https://terhaarmakelaars.nl/wp-content/uploads/realworks/wonen/6.231.228/122455690.jpg",
+    status: "FREE",
   },
   {
     id: nanoid(),
@@ -45,6 +46,7 @@ const houses = [
     price: 1550,
     type: "familie-appartement",
     img: "https://cloud.funda.nl/valentina_media/155/797/956_1080x720.jpg",
+    status: "FREE",
   },
   {
     id: nanoid(),
@@ -59,6 +61,7 @@ const houses = [
     price: 450,
     type: "studio",
     img: "https://cloud.funda.nl/valentina_media/155/670/273_1080x720.jpg",
+    status: "FREE",
   },
   {
     id: nanoid(),
@@ -73,6 +76,7 @@ const houses = [
     price: 750,
     type: "familie-appartement",
     img: "https://cloud.funda.nl/valentina_media/154/021/134_2160.jpg",
+    status: "FREE",
   },
   {
     id: nanoid(),
@@ -87,6 +91,7 @@ const houses = [
     price: 500,
     type: "familie-appartement",
     img: "https://cloud.funda.nl/valentina_media/156/235/230_2160.jpg",
+    status: "FREE",
   },
   {
     id: nanoid(),
@@ -101,6 +106,7 @@ const houses = [
     price: 2500,
     type: "penthouse",
     img: "https://cloud.funda.nl/valentina_media/155/662/624_2160.jpg",
+    status: "FREE",
   },
 ];
 

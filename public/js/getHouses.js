@@ -22,20 +22,18 @@ houseresult.forEach((huis) => {
       </div>
       <div class="straatnaam">
         ${huis.address.street_name}
-        ${huis.address.house_number}
+        ${huis.address.house_number}<br>
         ${huis.address.zip_code}
         ${huis.address.city}
-
-
       </div>
       <div class="row-description">
         <div class="m2"> m²:${huis.surface} </div>
         <div class="rooms">Kmrs: ${huis.rooms}</div>
         <div class="prijs"> €${huis.price}</div>
-        <button id="${huis.id}" class="rent--house">Huur Nu</button>
+        <button id="${huis.id}" onClick="rentedHouse(this.id)" class="rent--house">Huur Nu</button>
       </div>
     </div>
     </div>
-      `;
+    `;
 });
 rowHouses.innerHTML = insertHTML;
