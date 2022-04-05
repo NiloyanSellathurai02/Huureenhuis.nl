@@ -6,5 +6,7 @@ const rentedHouse = (id) => {
   httpREQ.open("PATCH", `http://localhost:2000/rented/${id}`, false);
   httpREQ.setRequestHeader("Content-Type", "application/json");
   httpREQ.send();
-  location.reload();
+  const status = JSON.parse(httpREQ.response);
+  console.log(status);
+  setTag(status);
 };

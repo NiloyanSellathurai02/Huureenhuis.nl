@@ -1,4 +1,5 @@
 const rowHouses = document.getElementById("sdk");
+const insertBlockTag = document.getElementById("insert-rentTag");
 
 const xmlHttp = new XMLHttpRequest();
 xmlHttp.open("GET", `http://localhost:2000/houses${location.search}`, false);
@@ -37,3 +38,14 @@ houseresult.forEach((huis) => {
     `;
 });
 rowHouses.innerHTML = insertHTML;
+let insertTag = "";
+
+const setTag = (status) => {
+  if (status.status === "BLOCKED") {
+    insertTag += `<div class="blockedtag">Is Al Verhuurd</div>`;
+    insertBlockTag.innerHTML = insertTag;
+  } else {
+    insertTag += `<div class="blockedtag-1">Gefeliciteerd 🎉</div>`;
+    insertBlockTag.innerHTML = insertTag;
+  }
+};

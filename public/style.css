@@ -333,9 +333,11 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  position: relative;
 }
 
 .row-1 {
+  position: relative;
   height: 30rem;
   width: 25rem;
   background-color: #f0a028;
@@ -379,4 +381,28 @@ footer {
   border-radius: 20px;
   border: 2px solid white;
   cursor: pointer;
+}
+
+.blockedtag {
+  background-color: #ff0000;
+  font-size: 1.5rem;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: 0;
+  text-transform: uppercase;
+  padding: 0.1rem 2rem;
+  font-weight: bold;
+}
+
+.blockedtag-1 {
+  background-color: #2baa00;
+  font-size: 1.5rem;
+  position: absolute;
+  text-align: left;
+  top: 100px;
+  left: 0;
+  text-transform: uppercase;
+  padding: 0.1rem 1.5rem;
+  font-weight: bold;
 }
