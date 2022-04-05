@@ -29,9 +29,9 @@ houseresult.forEach((huis) => {
 
       </div>
       <div class="row-description">
-        <div class="m2"> m2:${huis.surface}</div>
-        <div class="rooms">rooms: ${huis.rooms}</div>
-        <div class="prijs"> € ${huis.price}</div>
+        <div class="m2"> m²:${huis.surface} </div>
+        <div class="rooms">Kmrs: ${huis.rooms}</div>
+        <div class="prijs"> €${huis.price}</div>
         <button id="${huis.id}" class="rent--house">Huur Nu</button>
       </div>
     </div>
