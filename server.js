@@ -7,12 +7,12 @@ const port = 2000;
 const { House } = require("./models");
 app.use(express.json());
 
-app.post("/houses", async (req, res) => {
+app.get("/houses", async (req, res) => {
   try {
-    console.log(req.body);
-    const houseLocation = req.body.locationhouse;
-    const typeHouse = req.body.type;
-    const priceHouse = req.body.price;
+    console.log(req.query);
+    const houseLocation = req.query.locationhouse;
+    const typeHouse = req.query.type;
+    const priceHouse = req.query.price;
     console.log(houseLocation, typeHouse, priceHouse);
     let [lower, higher] = priceHouse.split("-");
     lower = Number(lower);
