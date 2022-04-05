@@ -13,19 +13,18 @@ app.post("/houses", async (req, res) => {
     const houseLocation = req.body.locationhouse;
     const typeHouse = req.body.type;
     const priceHouse = req.body.price;
-    console.log(houseLocation);
-    console.log(typeHouse);
-    console.log(priceHouse);
+    console.log(houseLocation, typeHouse, priceHouse);
     let [lower, higher] = priceHouse.split("-");
     lower = Number(lower);
     higher = Number(higher);
-    console.log(lower, higher);
 
     const correctHouses = await House.find({
       "address.city": houseLocation,
       type: typeHouse,
       $and: [{ price: { $gte: lower } }, { price: { $lte: higher } }],
     });
+    console.log(correctHouses);
+
     res.send(correctHouses);
   } catch (error) {
     res.status(400).send(error.message);
@@ -37,5 +36,3 @@ app.use(express.static("public"));
 app.listen(port, () => {
   console.log("De app luistert naar 2000");
 });
-
-a
