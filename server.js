@@ -52,11 +52,7 @@ app.patch("/rented/:id", async (req, res) => {
 
 app.get("/types", async (req, res) => {
   try {
-    let idHouse = 2;
-
-    const findType = await Type.find({
-      id: idHouse,
-    });
+    const findType = await Type.find();
     res.send(findType);
     console.log(findType);
   } catch (error) {
