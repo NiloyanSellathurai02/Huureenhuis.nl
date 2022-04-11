@@ -11,10 +11,20 @@ const schema = new mongoose.Schema({
   surface: "number",
   rooms: "number",
   price: "number",
-  type: "string",
+  type_id: "string",
   img: "string",
   status: "string",
 });
+
+schema.virtual("type", {
+  ref: "Type",
+  localField: "type_id",
+  foreignField: "id",
+  justOne: true,
+});
+
+schema.set("toObject", { virtuals: true });
+schema.set("toJSON", { virtuals: true });
 
 const House = mongoose.model("House", schema);
 
