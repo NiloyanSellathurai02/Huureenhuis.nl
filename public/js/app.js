@@ -1,4 +1,4 @@
-"use strict";
+("use strict");
 console.log(location);
 const getHouses = document.getElementById("search-submit-ctn");
 let locationHouse = document.getElementById("location");
