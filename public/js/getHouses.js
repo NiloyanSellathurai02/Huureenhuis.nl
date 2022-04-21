@@ -2,7 +2,11 @@ const rowHouses = document.getElementById("sdk");
 const insertBlockTag = document.getElementById("insert-rentTag");
 
 const xmlHttp = new XMLHttpRequest();
-xmlHttp.open("GET", `http://localhost:2000/houses${location.search}`, false);
+xmlHttp.open(
+  "GET",
+  `https://huureenhuis-nl.onrender.com/houses${location.search}`,
+  false
+);
 xmlHttp.setRequestHeader("Content-Type", "application/json");
 xmlHttp.send();
 console.log(xmlHttp.response);

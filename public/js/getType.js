@@ -2,7 +2,7 @@ const labelsHouse = document.getElementById("type-woning");
 const labels = document.querySelector("type-hs");
 
 const getHttpReq = new XMLHttpRequest();
-getHttpReq.open("GET", `http://localhost:2000/types`, false);
+getHttpReq.open("GET", `https://huureenhuis-nl.onrender.com/types`, false);
 getHttpReq.setRequestHeader("Content-Type", "application/json");
 getHttpReq.send();
 console.log(getHttpReq.response);
