@@ -45,6 +45,7 @@ app.patch("/rented/:id", async (req, res) => {
       { status: "BLOCKED" }
     );
     res.send(correctBtnId);
+    console.log(correctBtnId);
   } catch (error) {
     res.status(400).send(error.message);
   }
